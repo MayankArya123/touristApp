@@ -1,0 +1,22 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "backend of tourist app",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "build": "cd client && npm run build",
+    "install-client": "cd client && npm start",
+    "dev": "concurrently \"npm run index\"  \"npm run client\"",
+    "heroku-postbuild": "npm run install-client && npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "cors": "^2.8.5",
+    "dotenv": "^14.2.0",
+    "express": "^4.17.2",
+    "morgan": "^1.10.0"
+  }
+}
