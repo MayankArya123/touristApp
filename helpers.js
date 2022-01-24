@@ -16,9 +16,9 @@ const GetNearByTouristPlaces = async (latitude, longitude, placename, cb) => {
     // const { ,...rest } = response.data
     console.log(response.data.summary)
 
-    const DistanceResponse = await axios.get(
-        `https://api.distancematrix.ai/maps/api/distancematrix/json?origins=22.95456,76.042034&destinations=22.96974,76.06057&departure_time=now&key=b0VzzHpdfJzjGuQukhVIGv5ci6gkZ`
-      )
+    // const DistanceResponse = await axios.get(
+    //     `https://api.distancematrix.ai/maps/api/distancematrix/json?origins=22.95456,76.042034&destinations=22.96974,76.06057&departure_time=now&key=b0VzzHpdfJzjGuQukhVIGv5ci6gkZ`
+    //   )
    
     //   console.log('distance response',DistanceResponse.data.rows[0].elements[0].distance.text)
     //   console.log('distance response',DistanceResponse.data.rows[0].elements[0].duration.text)
