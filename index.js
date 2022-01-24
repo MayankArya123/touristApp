@@ -30,7 +30,7 @@ app.get("/GetNearByTouristPlaces", async (req, res) => {
       `https://api.tomtom.com/search/2/poiSearch/tourist attraction.json?key=utQHsOJFx99x4BwG8NUuAa3QQ1MR5FBG&=&limit=10&lat=${latitude}&lon=${longitude}&radius=50000`
     )
 
-
+    delete response.data.summary.queryType
     console.log("seeing response", response.data)
     
     res.send(response.data)
